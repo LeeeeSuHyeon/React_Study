@@ -445,11 +445,23 @@ import './index.css';
 
 // // ------------------------------------------------------------
 // // 15장 -  Sample;
-import Sample from './chap15/Sample';
+// import Sample from './chap15/Sample';
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Sample />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+
+// ------------------------------------------------------------
+// 8주차 과제
+import LoginControl from './task/task';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Sample />
+    <LoginControl/>
   </React.StrictMode>,
   document.getElementById('root')
 );
