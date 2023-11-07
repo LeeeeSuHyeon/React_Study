@@ -1,0 +1,268 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>문서 객체 선택</title>
+        <script>
+            window.onload = function(){
+                // 문서 객체 선택
+                var header = document.getElementById('header');
+
+                // 문서 객체 스타일 변경
+                header.style.color = 'red';
+                header.style.border = '1px solid black';
+            };
+        </script>
+    </head>
+    <body>
+        <h1 id = "header"> Title </h1>
+    </body>
+</html> -->
+
+
+<!-- p.14 -->
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>웹 페이지</title>
+        <script>
+            // 화면 구성이 완료되면
+            window.onload = function(){
+                // h1 태그의 색상을 흰색으로 변경
+                var header = document.querySelector('h1');
+                header.style.backgroundColor = 'red';
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Header 1 </h1>
+        <h1>Header 1 </h1>
+        <h1>Header 1 </h1>
+    </body>
+</html> -->
+
+
+<!-- p.15 -->
+<!-- <!DOCTYPE html>
+<html>
+    <head> <title>DOM Basic</title>
+        <script>
+            // 이벤트 연결
+            window.onload = function(){
+                // 문서 객체 선택
+                var headers = document.querySelectorAll('h1');
+                for (var i = 0; i < headers.length; i++){
+                    // 변수 선언
+                    var header = headers[i];
+    
+                    // 문서 객체 조작
+                    header.style.color = 'orange';
+                    header.style.background = 'red';
+                    header.innerHTML = 'From JavaScript'
+                }
+            };
+        </script>
+    </head>
+   
+    <body>
+        <h1>Header 1 </h1>
+        <h1>Header 1 </h1>
+        <h1>Header 1 </h1>
+    </body>
+</html> -->
+
+<!-- p.17, 18 -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head> 
+        <title>웹 페이지</title>
+        <script>
+            // 화면 구성이 완료되면
+            window.onload = function(){
+                // h1 태그 내부의 문자 변경
+                var header = document.getElementById('header');
+                var originalText = header.innerHTML;
+                header.innerHTML = '자바스크립트로 변경했어요!<br />';
+                header.innerHTML += '원래는 '+originalText + '였답니다!';
+            };
+        </script>
+    </head>
+   
+    <body>
+        <h1 id = "header">Header 1 </h1>
+        
+    </body>
+</html> -->
+
+
+<!-- P.18 -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head> 
+        <title>웹 페이지</title>
+        <script>
+            // 화면 구성이 완료되면
+            window.onload = function(){
+                // h1 태그 내부의 문자 변경
+                var header = document.getElementById('header');
+                var originalText = header.innerHTML;
+                header.innerHTML = '<i>i 태그입니다</i> <br />';
+                header.innerHTML += '&lt;i&gt;i 태그입니다&lt; /i&gt;';
+            };
+        </script>
+    </head>
+   
+    <body>
+        <h1 id = "header">Header 1 </h1>
+        
+    </body>
+</html> -->
+
+<!-- p. 20 -->
+<!-- <!DOCTYPE html>
+<html>
+    <head> <title>DOM Basic</title>
+        <script>
+            // 이벤트 연결
+            window.onload = function(){
+                // 문서 객체 추가
+                var output = '';
+                for (var i = 0; i < 256; i++){
+                    output += '<div></div>';
+                }
+                document.body.innerHTML = output;
+
+                // 문서 객체 선택
+                var divs = document.querySelectorAll('div');
+                for(var i = 0; i < divs.length; i++){
+                    // 변수 선언
+                    var div = divs[i];
+
+                    // 스타일 적용
+                    div.style.height = '2px';
+                    div.style.background = 'rgb('+ i + ',' + i + ',' + i +')';
+                }
+            };
+        </script>
+    </head>
+    <body>
+    </body>
+</html> -->
+
+
+<!-- p.23 -->
+<!-- <!DOCTYPE html>
+<html>
+    <head> <title>DOM Basic</title>
+        <script>
+            // 이벤트 연결
+            window.onload = function(){
+                // 변수 선언
+                var image = document.getElementById('image');
+
+                // 속성 변경 
+                image.src = 'http://placehold.it / 300 x 200';
+                image.width = 300;
+                image.height = 200;
+            };
+        </script>
+    </head>
+    <body>
+        <img id = "image" />
+    </body>
+</html> -->
+
+<!-- 25p -->
+<!-- <!DOCTYPE html>
+<html>
+    <head> <title>DOM Basic</title>
+        <script>
+            // 이벤트 연결
+            window.onload = function(){
+                // 속성 지정
+                document.body.setAttribute('data-custom', 'value');
+
+                // 속성 추출
+                var dataCustom = document.body.getAttribute('data-custom');
+                alert(dataCustom)
+            };
+        </script>
+    </head>
+    <body>
+    </body>
+</html> -->
+
+<!-- 29 -->
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Basic</title>
+    </head>
+    <body>
+        <button onclick = "alert('click')">버튼</button>
+    </body>
+</html> -->
+
+<!-- 31 -->
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Inline Event</title>
+        <script>
+            function buttonClick(){
+                alert('click');
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick = "buttonClick()">버튼</button>
+    </body>
+</html> -->
+
+
+
+
+<!-- 32, 33 -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head> <title>Traditional Event</title>
+        <script>
+            // 이벤트 연결
+            window.onload = function(){
+                // 문서 객체 선택
+                var button = document.getElementById('button');
+
+                // 이벤트 연결
+                button.onclick = function(){
+                    alert('click')
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <button id = "button">버튼</button>
+    </body>
+</html> -->
+
+
+<!-- 34 -->
+<!DOCTYPE html>
+<html>
+    <head> <title>IE Event Object</title>
+        <script>
+            window.onload = function(){
+                alert(window.event);
+            };
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+<!-- <script>
+    window.onload = (e) =>{
+        // 변수 e가 있으면 e를 넣고 없으면 window.event를 넣음
+        var event = e || window.event;
+    };
+</script> -->
