@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "name" : "셔츠",
+        "brand" : "폴로랄프로렌",
+        "explane" : "가을에 입기 좋은 셔츠",
+        "price" : "20,000원",
+        "img" : "https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id" : 2,
+        "name" : "가방",
+        "brand" : "슈프림",
+        "explane" : "가을에 입기 좋은 가방",
+        "price" : "210,000원",
+        "img" : "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFnfGVufDB8fDB8fHwy"
+    },
+    {
+        "id" : 3,
+        "name" : "신발",
+        "brand" : "아디다스",
+        "explane" : "가을에 신기 좋은 신발",
+        "price" : "300,000원",
+        "img" : "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8fDI%3D"
+    }
+]
