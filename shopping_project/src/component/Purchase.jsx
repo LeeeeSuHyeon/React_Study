@@ -10,7 +10,7 @@ const PurchaseContainer = styled.div`
     overflow-y: auto; /* 세로 스크롤이 필요할 때만 스크롤이 나타나도록 설정합니다. */
 `;
 const Table = styled.table`
-  width: 700px;
+  width: 800px;
   border-collapse: collapse;
   margin-top: 20px;
 `;

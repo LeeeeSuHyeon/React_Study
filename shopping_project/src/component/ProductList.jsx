@@ -8,7 +8,6 @@ import data from "../data.json"
 
 const Wrapper = styled.div`
     display: flex;
-    width : 600px;
     align-items: center;
     padding: 16px;
     border: 1px solid grey;
@@ -49,6 +48,16 @@ const ProductName = styled.span`
     font-size : 24px;
     margin-bottom : 20px;
 `
+
+const ProductComponent = styled.div`
+    border: 1px solid #ddd; /* 테두리 스타일 및 색상 설정 */
+    padding: 10px; /* 내부 여백 설정 */
+    height : 800px;
+    width : 700px;
+    overflow-y: auto; /* 세로 스크롤이 필요할 때만 스크롤이 나타나도록 설정합니다. */
+`;
+
+
 function formatPrice(price) {
     // 숫자를 받아서 "₩20,000" 형태로 변환
     return price ? new Intl.NumberFormat('ko-KR', { style: 'currency', currency: 'KRW' }).format(price): null
@@ -84,9 +93,9 @@ function ProductList(props) {
     const products = data;
 
     return (
-        <div>
+        <ProductComponent>
             <h1>제품 리스트</h1>
-            {products.map((product, index) => {
+            {products.map((product) => {
                 return (
                     <ProductListItem
                         key={product.id}
@@ -95,7 +104,7 @@ function ProductList(props) {
                     />
                 );
             })}
-        </div>
+        </ProductComponent>
     );
 }
 

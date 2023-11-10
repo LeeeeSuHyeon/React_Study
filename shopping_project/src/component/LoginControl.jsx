@@ -40,10 +40,9 @@ const LogButton = styled.button`
 `;
 
 const users = [
-    { id: "123", pw: "123" },
-    { id: "user2", pw: "password2" },
-    // Add more users as needed
-  ];
+    { id: "이수현", pw: "123" },
+    { id: "홍길동", pw: "1212" },
+];
 
 
 // 사용자 로그인 상태에 따라 적절한 컴포넌트 반환 

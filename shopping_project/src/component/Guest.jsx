@@ -8,7 +8,6 @@ import data from "../data.json"
 
 const Wrapper = styled.div`
     display: flex;
-    width : 600px;
     align-items: center;
     padding: 16px;
     border: 1px solid grey;
@@ -39,6 +38,13 @@ const ProductName = styled.span`
     font-size : 24px;
     margin-bottom : 20px;
 `
+const ProductComponent = styled.div`
+    border: 1px solid #ddd; /* 테두리 스타일 및 색상 설정 */
+    width : 700px;
+    padding: 10px; /* 내부 여백 설정 */
+    height : 800px;
+    overflow-y: auto; /* 세로 스크롤이 필요할 때만 스크롤이 나타나도록 설정합니다. */
+`;
 
 
 function formatPrice(price) {
@@ -69,7 +75,7 @@ function GuestProductList(props) {
     const products = data;
 
     return (
-        <div>
+        <ProductComponent>
             {products.map((product, index) => {
                 return (
                     <ProductListItem
@@ -78,7 +84,7 @@ function GuestProductList(props) {
                     />
                 );
             })}
-        </div>
+        </ProductComponent>
     );
 }
 

@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 
 const Table = styled.table`
-  width: 700px;
+  width: 800px;
   border-collapse: collapse;
   margin-top: 20px;
 `;
