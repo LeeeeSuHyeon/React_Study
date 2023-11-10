@@ -28,16 +28,6 @@ const ProductContainer = styled.div`
     flex-direction: column; /* 사진과 텍스트를 수직으로 나열 */
 `;
 
-const AddToCartButton = styled.button`
-    background-color: #0A82FF;
-    color: #FFF;
-    padding: 5px 10px;
-    border: 1px;
-    border-radius: 8px;
-    cursor: pointer;
-    height : 50px;
-`;
-
 const CartDiv = styled.div`
     margin-left: auto; // 컨테이너 오른쪽에 붙이기
     flex-direction: column; 
@@ -49,19 +39,16 @@ const ProductName = styled.span`
     font-size : 24px;
     margin-bottom : 20px;
 `
+
+
 function formatPrice(price) {
     // 숫자를 받아서 "₩20,000" 형태로 변환
     return price ? new Intl.NumberFormat('ko-KR', { style: 'currency', currency: 'KRW' }).format(price): null
 }
 
+
 function ProductListItem(props) {
     const product = props.product;
-
-    const handleAddToCart = () =>{
-        
-        // 장바구니에 제품 추가 
-        props.addToCart(product);
-    }
 
     return (
         <Wrapper>
@@ -72,14 +59,13 @@ function ProductListItem(props) {
             </ProductContainer>
             <CartDiv>
                 <ProductName>{formatPrice(product.price)}</ProductName>
-                <AddToCartButton onClick ={handleAddToCart}>장바구니에 추가</AddToCartButton>
             </CartDiv>
             
         </Wrapper>
     );
 }
 
-function ProductList(props) {
+function GuestProductList(props) {
     const products = data;
 
     return (
@@ -89,7 +75,6 @@ function ProductList(props) {
                     <ProductListItem
                         key={product.id}
                         product={product}
-                        addToCart={props.addToCart}
                     />
                 );
             })}
@@ -97,4 +82,4 @@ function ProductList(props) {
     );
 }
 
-export default ProductList;
+export default GuestProductList;

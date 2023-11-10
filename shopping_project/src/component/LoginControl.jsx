@@ -39,6 +39,12 @@ const LogButton = styled.button`
     height : 50px;
 `;
 
+const users = [
+    { id: "123", pw: "123" },
+    { id: "user2", pw: "password2" },
+    // Add more users as needed
+  ];
+
 
 // 사용자 로그인 상태에 따라 적절한 컴포넌트 반환 
 function Greeting(props){
@@ -93,40 +99,32 @@ function LoginControl(props){
     };
 
     // 로그인 버튼 클릭했을 때 호출하며, 사용자 로그인 상태 변경
+    // onLoginStatusChange()는 로그인 상태가 변경될 때 호출되는 콜백함수
     const handleLoginClick = ()=>{
-        setIsLoggedIn(true)
-        setName(form.id)
-        setForm({
-            id:'',
-            pw:''
-        });
+        const user = users.find((user) => user.id === form.id && user.pw === form.pw);
+        if(user){
+            setIsLoggedIn(true)
+            props.onLoginStatusChange(true)   // 콜백함수
+            setName(form.id)
+            setForm({
+                id:'',
+                pw:''
+            });
+        }
+        else{
+            alert("로그인 정보가 일치하지 않습니다.")
+        }
     }
 
     // 로그아웃 버튼 클릭 시 호출하고 form을 초기화 및 LoginHistory 초기화
     const handleLogoutClick = ()=>{
         setIsLoggedIn(false)
-
+        props.onLoginStatusChange(false)
         setForm({
             id:'',
             pw:''
         });
     }
-
-    // 로그인 내역 표시, map 함수를 이용하여 각 로그인 내역 표시 
-    // const table = ()=>{
-    //     return(
-            
-    //         <Wrapper>
-    //             <div>
-    //                 <h1> 로그인 내역 </h1>
-    //                 {loginHistory.map((entry, index)=>(
-    //                     <p key ={index}> ID : {entry.id}, PW : {entry.pw} </p>
-    //                 ))}
-    //             </div>
-    //         </Wrapper>
-            
-    //     )
-    // }
 
     return (
         <Wrapper>
