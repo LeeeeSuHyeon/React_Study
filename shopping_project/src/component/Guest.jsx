@@ -76,6 +76,7 @@ function GuestProductList(props) {
 
     return (
         <ProductComponent>
+            <h1>제품 리스트</h1>
             {products.map((product, index) => {
                 return (
                     <ProductListItem

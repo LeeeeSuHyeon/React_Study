@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import ProductList from './ProductList';
 import Cart from './Cart';
 import Purchase from './Purchase';  
-import styled from 'styled-components';
+import styled from 'styled-components'; // JavaScript 파일 내에서 컴포넌트 스타일을 정의하는 데 사용
 
 
 const Container = styled.div`
