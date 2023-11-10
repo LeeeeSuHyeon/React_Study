@@ -64,6 +64,7 @@ function ProductListItem(props) {
     }
 
     return (
+
         <Wrapper>
             <Image src={product.img} alt={product.name} />
             <ProductContainer >
@@ -84,6 +85,7 @@ function ProductList(props) {
 
     return (
         <div>
+            <h1>제품 리스트</h1>
             {products.map((product, index) => {
                 return (
                     <ProductListItem
