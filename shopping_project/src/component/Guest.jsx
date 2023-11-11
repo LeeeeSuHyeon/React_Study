@@ -61,7 +61,7 @@ function ProductListItem(props) {
             <Image src={product.img} alt={product.name} />
             <ProductContainer >
                 <ProductName>{product.name} ({product.brand})</ProductName>
-                <p>{product.explane}</p>
+                <p>{product.explain}</p>
             </ProductContainer>
             <CartDiv>
                 <ProductName>{formatPrice(product.price)}</ProductName>
@@ -77,10 +77,9 @@ function GuestProductList(props) {
     return (
         <ProductComponent>
             <h1>제품 리스트</h1>
-            {products.map((product, index) => {
+            {products.map((product) => {
                 return (
                     <ProductListItem
-                        key={product.id}
                         product={product}
                     />
                 );

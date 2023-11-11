@@ -73,18 +73,16 @@ function ProductListItem(props) {
     }
 
     return (
-
         <Wrapper>
             <Image src={product.img} alt={product.name} />
             <ProductContainer >
                 <ProductName>{product.name} ({product.brand})</ProductName>
-                <p>{product.explane}</p>
+                <p>{product.explain}</p>
             </ProductContainer>
             <CartDiv>
                 <ProductName>{formatPrice(product.price)}</ProductName>
                 <AddToCartButton onClick ={handleAddToCart}>장바구니에 추가</AddToCartButton>
             </CartDiv>
-            
         </Wrapper>
     );
 }

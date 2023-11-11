@@ -1,9 +1,10 @@
-// src/component/ShoppingPage.jsx (새로운 부모 컴포넌트)
+// src/component/ShoppingPage.jsx 
+
 import React, { useState } from 'react';
 import ProductList from './ProductList';
 import Cart from './Cart';
 import Purchase from './Purchase';  
-import styled from 'styled-components'; // JavaScript 파일 내에서 컴포넌트 스타일을 정의하는 데 사용
+import styled from 'styled-components'; 
 
 
 const Container = styled.div`
@@ -21,9 +22,16 @@ const StyledPurchaseAndCart = styled.div`
 
 
 function ShoppingPage(props) {
+     
+    // 장바구니 목록을 관리하기 위한 state
     const [cartItems, setCartItems] = useState([]);
+
+    // 구매 목록을 관리하기 위한 state
     const [purchasedItems, setPurchasedItems] = useState([]);
+
+    // 총 구매 가격을 관리하기 위한 state
     const [totalPrice, setTotalPrice] = useState(0);
+
     // 각 제품의 수량을 관리하기 위한 state
     const [productQuantities, setProductQuantities] = useState({});
 
@@ -59,13 +67,9 @@ function ShoppingPage(props) {
 
     // 장바구니에서 제품 삭제하는 함수
     const removeFromCart = (productToRemove) => {
-    const updatedCart = cartItems.filter((item) => item !== productToRemove);
+        const updatedCart = cartItems.filter((item) => item !== productToRemove);
         setCartItems(updatedCart);
 
-       // 해당 제품의 수량도 초기화
-        const updatedQuantities = { ...productQuantities };
-        delete updatedQuantities[productToRemove.id];
-        setProductQuantities(updatedQuantities);
     };
 
     // 각 제품의 수량 증가
@@ -86,23 +90,21 @@ function ShoppingPage(props) {
         }
     };
     
+    // 구매 버튼 클릭 함수
     const handlePurchase = () => {
-
         // 장바구니에서 제품을 구매 목록으로 이동
         const purchasedItemsWithQuantity = cartItems.map(item => ({
             ...item,
             purchasedQuantity: productQuantities[item.id] || 1,
         }));
-
-
         setPurchasedItems([...purchasedItems, ...purchasedItemsWithQuantity]);
 
         // 기존 총 가격에 구매된 제품들의 총 가격 추가
         setTotalPrice((prevTotalPrice) => prevTotalPrice + calculateTotalPrice());
 
+        // Cart Item, 수량 초기화
         setCartItems([]);
         setProductQuantities({});
-
     };
     return (
         <Container>

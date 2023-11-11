@@ -53,26 +53,11 @@ function formatPrice(price) {
   }
 
 function CartItem (props){
-    // const [quantity, setQuantity] = useState(1);
 
-    
     // 장바구니 삭제 함수
     const handleDelete = () => {
         props.onDelete(props.product); // 부모 컴포넌트에 삭제 이벤트 전달
     };
-
-
-    // const handleIncrement = () => {
-    //     // 상품 개수 증가 로직을 추가하면 됩니다.
-    //     setQuantity((prevQuantity) => prevQuantity + 1);
-    // };
-    
-    //   const handleDecrement = () => {
-    //     // 상품 개수 감소 로직을 추가하면 됩니다.
-    //     if (quantity > 1) {
-    //       setQuantity((prevQuantity) => prevQuantity - 1);
-    //     }
-    // };
 
     return (
         <tr>
@@ -96,13 +81,9 @@ function CartItem (props){
             </Td>   
         </tr>
         );
-    
   };
 
-
 function Cart (props){
-
-
     return (
         <CartComponent>
             <h2>장바구니 내역</h2>
@@ -121,7 +102,6 @@ function Cart (props){
                 <tbody>
                 {props.cartItems.map((item, index) => (
                     <CartItem 
-                        key={index} 
                         product={item} 
                         onDelete = {props.onDelete}
                         quantity = {props.quantity[item.id]}

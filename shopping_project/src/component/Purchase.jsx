@@ -26,6 +26,10 @@ const Td = styled.td`
   text-align : center;
 `;
 
+function formatPrice(price) {
+  return new Intl.NumberFormat('ko-KR', { style: 'currency', currency: 'KRW' }).format(price);
+}
+
 function Purchase(props) {
   return (
     <PurchaseContainer>
@@ -63,9 +67,4 @@ function Purchase(props) {
     </PurchaseContainer>
   );
 }
-
-function formatPrice(price) {
-  return new Intl.NumberFormat('ko-KR', { style: 'currency', currency: 'KRW' }).format(price);
-}
-
 export default Purchase;

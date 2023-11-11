@@ -3,7 +3,7 @@
         "id" : 1,
         "name" : "노스페이스 1996 에코 눕시 자켓 리얼 블랙",
         "brand" : "The North Face",
-        "explane" : "The North Face 1996 Eco Nuptse Jacket Real Black",
+        "explain" : "The North Face 1996 Eco Nuptse Jacket Real Black",
         "price" : 286000,
         "img" : "https://d3vfig6e0r0snz.cloudfront.net/rcYjnYuenaTH5vyDF/images/products/ad671bbf623129164a11df83752e0031.webp"
     },
@@ -11,7 +11,7 @@
         "id" : 2,
         "name" : "더뮤지엄비지터 HOODY-BLACK",
         "brand" : "THEMUSEUMVISITOR",
-        "explane" : "HEART PRINTED INSIDE-OUT HOODY-BLACK",
+        "explain" : "HEART PRINTED INSIDE-OUT HOODY-BLACK",
         "price" : 183000,
         "img" : "https://thexshop.co.kr/web/product/small/202311/b0590a7b4f1b03b825260892ded67760.jpg"
     },
@@ -19,7 +19,7 @@
         "id" : 3,
         "name" : "러프사이드 PARKA",
         "brand" : "ROUGH SIDE",
-        "explane" : "CLOUD PARKA-LIGHT GREY",
+        "explain" : "CLOUD PARKA-LIGHT GREY",
         "price" : 538000,
         "img" : "https://thexshop.co.kr/web/product/small/202311/1eeb2c157d7c3ef10bacf02a29b862d9.jpg"
     },
@@ -27,7 +27,7 @@
         "id" : 4,
         "name" : "산산기어 HOODED JACKET",
         "brand" : "SANSAN GEAR",
-        "explane" : "23FW FLEECE HOODED JACKET-LIGHT GREY",
+        "explain" : "23FW FLEECE HOODED JACKET-LIGHT GREY",
         "price" : 198000,
         "img" : "https://thexshop.co.kr/web/product/medium/202310/551828f466e5bd4a9cca72d16a04bee4.jpg"
     },
@@ -35,7 +35,7 @@
         "id" : 5,
         "name" : "포터리 SHIRT",
         "brand" : "POTTERY",
-        "explane" : "BUTTON DOWN SHIRT-WHITE",
+        "explain" : "BUTTON DOWN SHIRT-WHITE",
         "price" : 189000,
         "img" : "https://thexshop.co.kr/web/product/small/202301/663d4eefcc304b05d8cd186b93a5efcd.jpg"
     },
@@ -43,7 +43,7 @@
         "id" : 6,
         "name" : "애프터프레이 LEATHER BAG",
         "brand" : "AFTERPRAY",
-        "explane" : "CRESCENT MINI LEATHER BAG-BLACK",
+        "explain" : "CRESCENT MINI LEATHER BAG-BLACK",
         "price" : 195300,
         "img" : "https://thexshop.co.kr/web/product/small/202302/061af86c0e1881fa40b3ee252db5054c.jpg"
     },
@@ -51,7 +51,7 @@
         "id" : 7,
         "name" : "케일 CARGO PANTS",
         "brand" : "CAYL",
-        "explane" : "NC STRETCH CARGO PANTS-CREAM",
+        "explain" : "NC STRETCH CARGO PANTS-CREAM",
         "price" : 168000,
         "img" : "https://thexshop.co.kr/web/product/small/202311/5181e68c2d51f3f452b97e724d43d674.jpg"
     },
@@ -59,7 +59,7 @@
         "id" : 8,
         "name" : "살로몬 XT-6",
         "brand" : "SALOMON",
-        "explane" : "SHOES XT-6 BLACK/FALCON/COW HIDE(L47293800)",
+        "explain" : "SHOES XT-6 BLACK/FALCON/COW HIDE(L47293800)",
         "price" : 260000,
         "img" : "https://thexshop.co.kr/web/product/small/202311/59a519882cab17c40a8655feff7b4b76.jpg"
     },
@@ -67,7 +67,7 @@
         "id" : 9,
         "name" : "아식스 GEL-NIMBUS",
         "brand" : "ASICS",
-        "explane" : "GEL-NIMBUS 9(1201A424-023)",
+        "explaexplainne" : "GEL-NIMBUS 9(1201A424-023)",
         "price" : 179000,
         "img" : "https://thexshop.co.kr/web/product/small/202308/2911ae0161c910e12c69148dddd5d75c.jpg"
     },
@@ -75,7 +75,7 @@
         "id" : 10,
         "name" : "스부 SANDAL",
         "brand" : "SUBU",
-        "explane" : "DOWN SANDAL-DOTS",
+        "explain" : "DOWN SANDAL-DOTS",
         "price" : 35400,
         "img" : "https://thexshop.co.kr/web/product/small/202110/9c1a34f5e188a795bc1ce981b5237782.jpg"
     }

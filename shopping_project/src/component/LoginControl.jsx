@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components"
 
+// 로그인 컴포넌트 전체 div 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -39,6 +40,7 @@ const LogButton = styled.button`
     height : 50px;
 `;
 
+// 로그인 회원 배열 
 const users = [
     { id: "이수현", pw: "123" },
     { id: "홍길동", pw: "1212" },
@@ -98,7 +100,7 @@ function LoginControl(props){
     };
 
     // 로그인 버튼 클릭했을 때 호출하며, 사용자 로그인 상태 변경
-    // onLoginStatusChange()는 로그인 상태가 변경될 때 호출되는 콜백함수
+    // onLoginStatusChange()는 App.js에서 로그인 상태를 변경하기 위해 로그인 상태가 변경될 때 호출되는 콜백함수
     const handleLoginClick = ()=>{
         const user = users.find((user) => user.id === form.id && user.pw === form.pw);
         if(user){
