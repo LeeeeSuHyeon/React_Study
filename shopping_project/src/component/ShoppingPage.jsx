@@ -37,7 +37,7 @@ function ShoppingPage(props) {
 
      
 
-    // 총 가격 계산 함수
+    // 장바구니 내 가격 계산 함수
     const calculateTotalPrice = () => {
         return cartItems.reduce((total, item) => total + item.price * (productQuantities[item.id] || 1), 0);
     };

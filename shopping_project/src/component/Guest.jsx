@@ -80,6 +80,7 @@ function GuestProductList(props) {
             {products.map((product) => {
                 return (
                     <ProductListItem
+                        key={product.id}
                         product={product}
                     />
                 );

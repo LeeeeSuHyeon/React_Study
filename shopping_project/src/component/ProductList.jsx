@@ -3,7 +3,7 @@
 import React from "react"
 import styled from "styled-components"
 import data from "../data.json"
-
+2
 
 
 const Wrapper = styled.div`

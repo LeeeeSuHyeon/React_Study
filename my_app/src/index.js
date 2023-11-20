@@ -177,14 +177,14 @@ import './index.css';
 
 // // ------------------------------------------------------------
 // // 8장 - EventPractice
-// import EventPractice from './chap08/EventPractice';
+import EventPractice from './chap08/EventPractice';
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <EventPractice />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+ReactDOM.render(
+  <React.StrictMode>
+    <EventPractice />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 // // ------------------------------------------------------------
 // // 8장 - Mybutton
@@ -457,11 +457,11 @@ import './index.css';
 
 // ------------------------------------------------------------
 // 8주차 과제
-import LoginControl from './task/task';
+// import LoginControl from './task/task';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <LoginControl/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <LoginControl/>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
